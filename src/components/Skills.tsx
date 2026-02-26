@@ -49,9 +49,9 @@ export function Skills() {
           <h2 className="text-3xl md:text-4xl font-primaryMedium tracking-wide">
             Technical Skills
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto font-primaryRegular">
+          <p className="text-muted-foreground max-w-2xl mx-auto font-primaryMedium">
             Comprehensive expertise across modern development stack with focus
-            on scalable web applications and DevOps practices.
+            on scalable web applications and AI modules.
           </p>
         </div>
 
