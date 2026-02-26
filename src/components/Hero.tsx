@@ -10,6 +10,7 @@ import {
 } from "@ant-design/icons";
 import { ImageWithFallback } from "./ImageWithFallback";
 import profile from "../assets/images/1.png";
+import file from "../../public/Resume_VanHuyTran.pdf";
 
 export function Hero() {
   return (
@@ -77,7 +78,7 @@ export function Hero() {
                 className="px-8 py-6 bg-gray-900"
               >
                 <a
-                  href="../assets/files/Resume_VanHuyTran.pdf" // ← đường dẫn từ root (public folder)
+                  href={file} // ← đường dẫn từ root (public folder)
                   download="Resume_VanHuyTran.pdf" // ← tên file khi download
                   className="relative z-10 flex items-center gap-2 text-white no-underline hover:text-white font-primaryRegular"
                 >
