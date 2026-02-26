@@ -10,7 +10,7 @@ import {
 } from "@ant-design/icons";
 import { ImageWithFallback } from "./ImageWithFallback";
 import profile from "../assets/images/1.png";
-import file from "../../public/Resume_VanHuyTran.pdf";
+// import file from "../../public/Resume_VanHuyTran.pdf";
 
 export function Hero() {
   return (
