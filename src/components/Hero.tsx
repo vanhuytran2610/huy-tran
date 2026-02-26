@@ -10,7 +10,6 @@ import {
 } from "@ant-design/icons";
 import { ImageWithFallback } from "./ImageWithFallback";
 import profile from "../assets/images/1.png";
-// import file from "../../public/Resume_VanHuyTran.pdf";
 
 export function Hero() {
   return (
@@ -76,17 +75,15 @@ export function Hero() {
                 color="default"
                 variant="solid"
                 className="px-8 py-6 bg-gray-900"
-                onClick={() => {
-                  const link = document.createElement("a");
-                  link.href = "../../public/Resume_VanHuyTran.pdf"; // hoặc full URL nếu cần
-                  link.download = "Resume_VanHuyTran.pdf"; // tên chính xác
-                  document.body.appendChild(link);
-                  link.click();
-                  document.body.removeChild(link);
-                }}
               >
-                <DownloadOutlined className="h-5 w-5" />
-                Download Resume
+                <a
+                  href="/Resume_VanHuyTran.pdf" // ← đường dẫn từ root (public folder)
+                  download="Resume_VanHuyTran.pdf" // ← tên file khi download
+                  className="relative z-10 flex items-center gap-2 text-white no-underline hover:text-white font-primaryRegular"
+                >
+                  <DownloadOutlined className="h-5 w-5" />
+                  Download Resume
+                </a>
               </Button>
 
               <Button
