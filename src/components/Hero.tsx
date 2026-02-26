@@ -204,7 +204,7 @@ export function Hero() {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+        <div className="absolute bottom-14 left-1/2 transform -translate-x-1/2">
           <div className="flex flex-col items-center gap-2 animate-bounce">
             <span className="text-sm text-muted-foreground font-primaryRegular">
               Scroll to explore
