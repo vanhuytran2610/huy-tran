@@ -51,9 +51,9 @@ export default function App() {
             <div className="flex justify-between items-center h-16">
               {/* Logo / Name */}
               <div className="shrink-0 mt-2">
-                <h3 className="text-xl font-semibold tracking-tight">
-                  Tran Van Huy
-                </h3>
+                <a href="#home" className="text-xl font-semibold tracking-tight">
+                  vhuytran.dev
+                </a>
               </div>
 
               {/* Desktop Navigation */}
