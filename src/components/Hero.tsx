@@ -77,8 +77,8 @@ export function Hero() {
                 className="px-8 py-6 bg-gray-900"
               >
                 <a
-                  href="/Resume_VanHuyTran.pdf" // ← đường dẫn từ root (public folder)
-                  download="Resume_VanHuyTran.pdf" // ← tên file khi download
+                  href="/Resume_HuyTranVan.pdf" // ← đường dẫn từ root (public folder)
+                  download="Resume_HuyTranVan.pdf" // ← tên file khi download
                   className="relative z-10 flex items-center gap-2 text-white no-underline hover:text-white font-primaryRegular"
                 >
                   <DownloadOutlined className="h-5 w-5" />

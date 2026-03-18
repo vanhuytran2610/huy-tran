@@ -5,15 +5,23 @@ import { ImageWithFallback } from "./ImageWithFallback";
 import ecommerceImage from "../assets/images/ecommerce.jpg";
 import enigcoImage from "../assets/images/enigco.jpg";
 import erpImage from "../assets/images/erp.png";
+import mitImage from "../assets/images/mit.png";
 
 export function Projects() {
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "E-commerce Website for Japanese Supermarket",
       description:
         "Frontend e-commerce solution built with React and TypeScript. Features include customer pages, user authentication, payment processing, and admin dashboard.",
       image: ecommerceImage,
-      technologies: ["Javascript", "TypeScript", "React", "Hostinger"],
+      technologies: [
+        "Javascript",
+        "TypeScript",
+        "PHP",
+        "React",
+        "Laravel",
+        "Hostinger",
+      ],
       demo: "https://shokyutiemvayca.com/",
     },
     {
@@ -32,6 +40,15 @@ export function Projects() {
       technologies: ["TypeScript", "React", "NestJS", "WebSocket", "MongoDB"],
       demo: "https://eerp.enclave.vn/",
     },
+    {
+      title:
+        "Driver Behavior Detection System - Joint Project with MIT Research Lab",
+      description:
+        "Collaborated with MIT researchers to develop a driver behavior detection system using computer vision and machine learning techniques. The system analyzes video feeds to identify risky driving behaviors and provide real-time feedback.",
+      image: mitImage,
+      technologies: ["Python", "PostgreSQL"],
+      demo: "/",
+    },
   ];
 
   return (
@@ -47,13 +64,13 @@ export function Projects() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {projects.map((project, index) => (
             <Card
               key={index}
               className="overflow-hidden"
               cover={
-                <div className="aspect-video overflow-hidden">
+                <div className="aspect-video overflow-hidden h-48">
                   <ImageWithFallback
                     src={project.image}
                     alt={project.title}
@@ -77,23 +94,20 @@ export function Projects() {
                     </div>
                   ))}
                 </div>
-                <div className="flex gap-2 pt-2">
-                  <Button
-                    size="middle"
-                    color="default"
-                    variant="solid"
-                    className=""
-                  >
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-1"
-                    >
-                      <ExportOutlined className="h-4 w-4" />
-                      Demo
-                    </a>
-                  </Button>
+                <div className="flex gap-2 pt-8">
+                  <div className="absolute bottom-4">
+                    <Button size="middle" color="default" variant="solid">
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1"
+                      >
+                        <ExportOutlined className="h-4 w-4" />
+                        Demo
+                      </a>
+                    </Button>
+                  </div>
                 </div>
               </div>
             </Card>

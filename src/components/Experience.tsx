@@ -20,7 +20,7 @@ export function Experience() {
       location: "Da Nang, Vietnam",
       period: "2022 - Present",
       description:
-        "Delivered scalable websites, 360° performance review systems, and chatbot solutions using JavaScript, Python, and Laravel frameworks, managing deployment and server configuration on Apache2 (Linux).",
+        "Delivered scalable websites, 360° performance review systems, chatbot solutions, and data analysis using JavaScript, Python, and Laravel frameworks, managing deployment and server configuration on Apache2 (Linux).",
       technologies: [
         "Python",
         "Django",
