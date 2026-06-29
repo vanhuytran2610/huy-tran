@@ -76,7 +76,7 @@ export function Contact() {
               <div className="space-y-1">
                 <h4 className="font-primaryBold text-base">Location</h4>
                 <p className="font-primaryRegular text-sm text-gray-600">
-                  Remote or Onsite (Da Nang, Vietnam)
+                  Remote or Hybrid
                 </p>
               </div>
             </div>

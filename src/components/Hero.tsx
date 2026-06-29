@@ -11,7 +11,15 @@ import {
 import { ImageWithFallback } from "./ImageWithFallback";
 import profile from "../assets/images/1.png";
 
+function getYearsOfExperience() {
+  const start = new Date(2022, 2); // March 2022
+  const now = new Date();
+  const years = now.getFullYear() - start.getFullYear() - (now.getMonth() < start.getMonth() ? 1 : 0);
+  return years;
+}
+
 export function Hero() {
+  const yearsExp = getYearsOfExperience();
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Animated Background */}
@@ -51,19 +59,18 @@ export function Hero() {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl tracking-wide font-primaryMedium">
                 <span className="block">Hello, I'm</span>
                 <span className="block bg-gradient-to-r from-primary via-primary to-primary/70 bg-clip-text pt-1">
-                  Tran Van Huy
+                  Huy Van Tran
                 </span>
               </h1>
 
               <div className="space-y-5 font-primaryRegular">
                 <p className="text-xl sm:text-2xl text-muted-foreground max-w-lg">
-                  Software Engineer crafting digital experiences with
-                  <span className="text-primary"> 3+ years</span> of expertise
+                  AI Engineer & Full-Stack Engineer with
+                  <span className="text-primary"> {yearsExp}+ years</span> of expertise
                 </p>
 
                 <p className="text-lg text-muted-foreground/80 max-w-md">
-                  Specializing in full-stack, AI development, and scalable
-                  solutions that drive business growth.
+                  Building production web apps and AI-powered systems — React/TypeScript frontends, Python/FastAPI backends, and LLM integrations with LangGraph, RAG, and computer vision.
                 </p>
               </div>
             </div>
@@ -149,21 +156,21 @@ export function Hero() {
             {/* Quick Stats */}
             <div className="grid grid-cols-3 gap-8 pt-8">
               <div className="text-center lg:text-left">
-                <div className="text-2xl md:text-3xl mb-1">10+</div>
+                <div className="text-2xl md:text-3xl mb-1">7+</div>
                 <div className="text-sm text-muted-foreground font-primaryRegular">
                   Projects
                 </div>
               </div>
               <div className="text-center lg:text-left">
-                <div className="text-2xl md:text-3xl mb-1">3+</div>
+                <div className="text-2xl md:text-3xl mb-1">{yearsExp}+</div>
                 <div className="text-sm text-muted-foreground font-primaryRegular">
                   Years Exp
                 </div>
               </div>
               <div className="text-center lg:text-left">
-                <div className="text-2xl md:text-3xl mb-1">100%</div>
+                <div className="text-2xl md:text-3xl mb-1">MIT</div>
                 <div className="text-sm text-muted-foreground font-primaryRegular">
-                  Client Satisfaction
+                  Collaborated
                 </div>
               </div>
             </div>

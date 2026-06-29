@@ -1,44 +1,52 @@
 import { Card } from "antd";
 import {
-  CodeOutlined,
+  OpenAIOutlined,
   SettingOutlined,
   GlobalOutlined,
   CloudServerOutlined,
   DatabaseFilled,
-  WindowsFilled,
+  RobotOutlined,
 } from "@ant-design/icons";
 
 export function Skills() {
   const skillCategories = [
     {
-      icon: CodeOutlined,
-      title: "Programming Languages",
-      skills: ["Python", "JavaScript", "TypeScript", "PHP", "SQL"],
-    },
-    {
-      icon: CloudServerOutlined,
-      title: "DevOps & Tools",
-      skills: ["Docker", "Git", "Apache2"],
+      icon: RobotOutlined,
+      title: "AI/ML",
+      skills: [
+        "LangGraph/LangChain",
+        "RAG",
+        "LLM",
+        "Pytorch",
+        "OpenCV",
+        "Computer Vision",
+        "NLP",
+      ],
     },
     {
       icon: GlobalOutlined,
       title: "Frontend",
-      skills: ["React", "HTML", "CSS"],
+      skills: ["React", "TypeScript", "Redux", "Tailwind CSS", "Responsive", "HTML", "CSS"],
     },
     {
       icon: SettingOutlined,
       title: "Backend",
-      skills: ["Django", "Flask", "FastAPI", "NestJS", "Laravel"],
+      skills: ["Python", "FastAPI", "Django", "Node.js/Express", "NestJS", "Laravel", "gRPC", "WebSocket"],
     },
     {
       icon: DatabaseFilled,
       title: "Databases",
-      skills: ["MySQL", "MongoDB", "PostgreSQL", "SQL Server"],
+      skills: ["MySQL", "MongoDB", "PostgreSQL"],
     },
     {
-      icon: WindowsFilled,
-      title: "Operating Systems",
-      skills: ["Linux (Ubuntu)", "Windows"],
+      icon: CloudServerOutlined,
+      title: "Cloud & DevOps",
+      skills: ["Docker", "NginX", "Linux", "Git", "Apache2", "CI/CD (Github Actions)"],
+    },
+    {
+      icon: OpenAIOutlined,
+      title: "AI Development Tools",
+      skills: ["Claude", "ChatGPT", "Grok"],
     },
   ];
 

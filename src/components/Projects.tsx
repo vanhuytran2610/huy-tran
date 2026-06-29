@@ -4,7 +4,7 @@ import { ExportOutlined } from "@ant-design/icons";
 import { ImageWithFallback } from "./ImageWithFallback";
 import ecommerceImage from "../assets/images/ecommerce.jpg";
 import enigcoImage from "../assets/images/enigco.jpg";
-import erpImage from "../assets/images/erp.png";
+import agentImage from "../assets/images/agent.png";
 import mitImage from "../assets/images/mit.png";
 
 export function Projects() {
@@ -12,16 +12,9 @@ export function Projects() {
     {
       title: "E-commerce Website for Japanese Supermarket",
       description:
-        "Frontend e-commerce solution built with React and TypeScript. Features include customer pages, user authentication, payment processing, and admin dashboard.",
+        "Fullstack e-commerce solution built with React and PHP-Laravel. Features include customer pages, user authentication, payment processing, and admin dashboard.",
       image: ecommerceImage,
-      technologies: [
-        "Javascript",
-        "TypeScript",
-        "PHP",
-        "React",
-        "Laravel",
-        "Hostinger",
-      ],
+      technologies: ["React", "TypeScript", "PHP", "Laravel", "Hostinger"],
       demo: "https://shokyutiemvayca.com/",
     },
     {
@@ -29,16 +22,35 @@ export function Projects() {
       description:
         "Real-time patient monitoring, AI-powered clinical support, and an intelligent hospital operations management system built with Python, FastAPI, React, and deployed on Render.",
       image: enigcoImage,
-      technologies: ["Python", "FastAPI", "React", "Render", "PostgreSQL"],
+      technologies: [
+        "Python",
+        "OpenCV",
+        "MediaPipe",
+        "FastAPI",
+        "PostgreSQL",
+        "React",
+        "TypeScript",
+        "Render",
+      ],
       demo: "https://enigco.com/",
     },
     {
-      title: "360° Performance Review System",
+      title: "Badminton Club Management Platform – AI Agent Layer",
       description:
-        "Built a 360-degree performance review platform that allows employees to conduct self-assessments, suggest salary adjustment percentages, and outline personal growth plans.",
-      image: erpImage,
-      technologies: ["TypeScript", "React", "NestJS", "WebSocket", "MongoDB"],
-      demo: "https://eerp.enclave.vn/",
+        "Personal project: AI agent layered onto a React/Node.js club app. Admins manage operations via natural language with LLM function calling, human-in-the-loop confirmation, and persistent MongoDB conversation memory.",
+      image: agentImage,
+      technologies: [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Python",
+        "FastAPI",
+        "LangGraph",
+        "MongoDB",
+        "Docker",
+        "Nginx",
+      ],
+      demo: "/",
     },
     {
       title:

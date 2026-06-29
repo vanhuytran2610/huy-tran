@@ -152,7 +152,7 @@ export default function App() {
         <div className="max-w-4xl mx-auto text-center">
           <h3 className="mb-4 text-xl font-semibold">Tran Van Huy</h3>
           <p className="text-muted-foreground mb-6">
-            AI Engineer | Full-Stack Developer
+            AI Engineer | Full-Stack Engineer
           </p>
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} Tran Van Huy. All rights reserved.

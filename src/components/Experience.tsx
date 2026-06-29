@@ -6,45 +6,91 @@ import { Briefcase01Icon } from "@hugeicons/core-free-icons";
 export function Experience() {
   const experiences = [
     {
+      title: "AI Agent Engineer",
+      company: "Personal Project – Badminton Club Management Platform",
+      location: "Remote",
+      period: "Jan 2026 - Present",
+      description:
+        "Built an AI agent layer on top of a React/Node.js badminton club app. Admins can manage operations via natural language using LLM function calling, with human-in-the-loop confirmation and persistent conversation memory.",
+      technologies: [
+        "React",
+        "Redux",
+        "TypeScript",
+        "Node.js",
+        "Python",
+        "FastAPI",
+        "LangGraph",
+        "LLM Function Calling",
+        "Grok (xAI)",
+        "MongoDB",
+        "Docker",
+        "Nginx",
+        "i18n",
+      ],
+    },
+    {
       title: "AI Software Engineer",
       company: "Enigco",
       location: "Remote",
-      period: "2025 - Present",
+      period: "Jan 2025 - Present",
       description:
-        "Architect and develop AI-powered systems using Python, FastAPI, and React, with cloud deployment and infrastructure management on Render.",
-      technologies: ["Python", "FastAPI", "React", "Render"],
+        "Led AI development in a 3-member startup team. Built computer vision models for seizure and fall detection, real-time inference pipelines with MediaPipe, and FastAPI services integrated into a smart hospital platform.",
+      technologies: [
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "OpenCV",
+        "MediaPipe",
+      ],
     },
     {
       title: "Full Stack Software Engineer",
       company: "Enclave",
       location: "Da Nang, Vietnam",
-      period: "2022 - Present",
+      period: "Jan 2022 - Present",
       description:
-        "Delivered scalable websites, 360° performance review systems, chatbot solutions, and data analysis using JavaScript, Python, and Laravel frameworks, managing deployment and server configuration on Apache2 (Linux).",
+        "Delivered 4 production systems: driver behavior detection models (MIT Research Lab joint project), an enterprise RAG chatbot for a US government client, a 360° performance review platform with microservices, and an NGO management system.",
       technologies: [
         "Python",
+        "OpenCV",
         "Django",
-        "JavaScript",
-        "Typescript",
-        "React",
+        "Rasa",
+        "RAG",
+        "LLM",
         "NestJS",
-        "PHP",
-        "Laravel",
-        "SQL Server",
+        "gRPC",
+        "TypeScript",
+        "React",
+        "Redux",
         "MongoDB",
         "MySQL",
+        "PostgreSQL",
+        "SQL Server",
+        "WebSocket",
+        "Docker",
         "Apache2",
-        "Git",
+        "PHP",
       ],
     },
     {
-      title: "Frontend Software Engineer",
+      title: "Full Stack Developer",
       company: "Freelance",
       location: "Da Nang, Vietnam",
-      period: "2024 - 2025",
+      period: "Aug 2024 - Aug 2025",
       description:
-        "Built responsive web applications. Worked with cross-functional teams to deliver high-quality software solutions.",
-      technologies: ["Javascript", "TypeScript", "React"],
+        "Built a full-stack e-commerce platform for a Japanese supermarket with customer and admin portals, covering product management, shopping cart, online payment, and order tracking.",
+      technologies: [
+        "PHP",
+        "Laravel",
+        "React",
+        "TypeScript",
+        "Redux",
+        "Tailwind CSS",
+        "MySQL",
+      ],
     },
   ];
 
@@ -56,8 +102,7 @@ export function Experience() {
             Professional Experience
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Over 3 years of experience building scalable web applications and AI
-            solutions, with a strong focus on full-stack development.
+            4+ years delivering production web applications and AI-powered systems — from LLM agents and computer vision to full-stack platforms across startups, enterprises, and research labs.
           </p>
         </div>
 
